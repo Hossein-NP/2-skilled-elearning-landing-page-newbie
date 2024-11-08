@@ -112,11 +112,7 @@ body {
 .block {
     display: block;
 }
-/* Utitlites >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>dimension  */
-.logo-svg-dimension {
-    width: 111px; 
-    height:28px
-}
+
 /* Utitlites >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Typography  */
 .text-preset-1 {
     font-family: 'Plus Jakarta Sans';
@@ -207,4 +203,115 @@ header:first-child  h1 {
 }
 header div p {
     color: var(--color-gray);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* container  */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Media Query  */
+  /* 'xs': '375px' */
+  @media (min-width: 375px) {
+    .container {
+        max-width: 100%;
+    }
+    nav {
+        padding-top: var(--s-4);
+        padding-bottom: var(--s-4);
+        padding-right: var(--s-5);
+        padding-left: var(--s-5);
+    }
+    .logo-small {
+      display: block;  
+    }
+    .logo-lg {
+        display: none;
+    }
+    .logo-svg-dimension {
+        width: 79.29px; 
+        height:29px
+    }
+    .hero {
+        display: none;
+    }
+}
+      /* 'sm': '640px' */
+      @media (min-width: 640px) {
+    .container {
+        max-width: 64rem;
+    }
+}
+          /* 'md': '768px' */
+    @media (min-width: 768px) {
+    .container {
+            max-width: 76.8rem;
+    }
+    nav {
+        padding-top: var(--s-6);
+        padding-bottom: var(--s-6);
+        padding-right: var(--s-11);
+        padding-left: var(--s-11);
+    }
+    .hero {
+        display: none;
+    }
+}
+          /* 'lg': '1024px' */
+    @media (min-width: 1024px) {
+    .container {
+        max-width: 102.4rem;
+    }
+    .logo-small {
+        display: none;  
+      }
+      .logo-lg {
+          display: block;
+      }
+    .logo-svg-dimension {
+        width: 111px; 
+        height:28px
+    }
+}
+          /* 'xl': '1280px' */
+    @media (min-width: 1280px) {
+    .container {
+        max-width: 128rem;
+    }
+}
+          /* '1440px' */
+    @media (min-width: 1440px) {
+    .container {
+        max-width: 144rem;
+        padding: 0;
+     }
+    nav {
+        padding-top: var(--s-6);
+        padding-bottom: var(--s-6);
+        padding-right: var(--s-20);
+        padding-left: var(--s-20);
+    }
+    header {
+        padding-top: 6.4rem;
+        padding-bottom: 6.4rem;
+    }
+        
 }

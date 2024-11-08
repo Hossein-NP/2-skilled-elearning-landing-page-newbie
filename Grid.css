@@ -17,6 +17,13 @@
         .container {
             max-width: 76.8rem;
         }
+        nav {
+            padding-top: 2.4rem;
+            padding-bottom: 2.4rem;
+        }
+        .hero {
+            display: none;
+        }
     }
           /* 'lg': '1024px' */
     @media (min-width: 1024px) {

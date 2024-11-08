@@ -8,12 +8,12 @@
   <link rel="shortcut icon" href="images/assets/favicon-32x32.png" type="image/x-icon">
   <link rel="stylesheet" href="Fonts/Plus_Jakarta_Sans2/stylesheet.css">
   <link rel="stylesheet" href="app.css">
-  <link rel="stylesheet" href="Grid.css">
+  <!-- <link rel="stylesheet" href="Grid.css"> -->
 </head>
 <body>
   <!-- svg  -->
   <svg style="display: none;">
-    <symbol id="logo" width="112" height="29" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="logo"  xmlns="http://www.w3.org/2000/svg">
       <g fill="#13183F">
         <path d="M9.684 28.432c-2.16 0-4.038-.51-5.634-1.53S1.368 24.508.792 22.78l3.96-1.872c.504 1.056 1.188 1.884 2.052 2.484.864.6 1.824.9 2.88.9.768 0 1.356-.156 1.764-.468.408-.312.612-.744.612-1.296 0-.288-.072-.534-.216-.738-.144-.204-.36-.39-.648-.558a4.593 4.593 0 0 0-1.08-.432l-3.348-.936C5.16 19.408
          3.924 18.67 3.06 17.65c-.864-1.02-1.296-2.226-1.296-3.618 0-1.224.312-2.292.936-3.204.624-.912 1.5-1.626 2.628-2.142 1.128-.516 2.424-.774 
@@ -40,15 +40,18 @@
   <main>
     <!-- Nav  -->
      <div class="container">
-      <nav class="flex-between px-20">
+      <nav class="flex-between">
         <!-- left Section -->
         <div class="">
           <!-- logo  -->
-          <a href="#">
+          <a href="#" class="logo-lg">
             <svg class="logo-svg-dimension">
               <use href="#logo"></use>
             </svg>
           </a>
+          <div class="logo-small">
+            <img src="images/logo-small.png" alt="">
+          </div>
         </div>
          <!-- right Section -->
         <div class="flex-center ">
@@ -59,7 +62,7 @@
      </div>
 
      <!-- Hero Header -->
-     <div class="container">
+     <div class="container hero">
       <header class="flex-between px-20 h-172">
         <!-- Left Section  -->
          <div class="w-136">
