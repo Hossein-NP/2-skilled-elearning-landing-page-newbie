@@ -1,0 +1,210 @@
+:root {
+    /* Colors  */
+    --color-Blue-900: #13183F;
+    --color-Blue-600: hsl(234°, 25%, 52%);
+    --color-pink-600: hsl(341°, 92%, 62%);
+    --color-pink-300: hsl(341°, 100%, 83%);
+    --color-gray: #83869A;
+    --color-white: #FFFFFF;
+    /* Gradients  */
+    --Gradients-1-1: #F02AA6;
+    --Gradients-1-2: #FF6F48;
+    --Gradients-2-1: #4851FF;
+    --Gradients-2-2: #F02AA6;
+    /* Spacing  */
+    --s-2: 0.8rem; /* 8px */
+    --s-3: 1.2rem;
+    --s-4: 1.6rem;
+    --s-5: 2rem;
+    --s-6: 2.4rem;
+    --s-8: 3.2rem;
+    --s-10: 4rem;
+    --s-11: 4.4rem;
+    --s-14: 5.6rem;
+    --s-16: 6.4rem;
+    --s-20: 8rem;
+    --s-32: 12.8rem;
+    --s-36: 14.4rem;
+    /* Line Heigth  */
+    --leading-12: 120%;
+    --leading-15: 150%;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*10px */
+}
+
+* , *::after , *::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    line-height: 1.6;
+    font-size: var(--s-5);
+    font-family: 'Plus Jakarta Sans';
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    overflow: hidden;
+}
+
+/* ================================================================================================ */
+
+/* Utitlites  */
+/* Utitlites >>>>>>>>>>>>>>>>spacing  */
+.py-4 {
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+}
+.px-4 {
+    padding-right: 1.6rem;
+    padding-left: 1.6rem;
+}
+.px-5 {
+    padding-right:  2rem;
+    padding-left:  2rem;
+}
+.py-6 {
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+}
+.py-8 {
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+}
+.px-11 {
+    padding: 0 4.4rem;
+}
+.px-20 {
+    padding-right:  8rem;
+    padding-left:  8rem;
+}
+.mt-6 {
+    margin-top: 2.4rem;
+}
+.mt-10 {
+    margin-bottom: 4rem;
+}
+.w-136 {
+    width: 55.4rem;
+}
+.h-172 {
+    height: 68.8rem;
+}
+/* Utitlites>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> flex  */
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.block {
+    display: block;
+}
+/* Utitlites >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>dimension  */
+.logo-svg-dimension {
+    width: 111px; 
+    height:28px
+}
+/* Utitlites >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Typography  */
+.text-preset-1 {
+    font-family: 'Plus Jakarta Sans';
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0;
+    line-height: var(--leading-12);
+    font-size: var(--s-14);
+}
+.text-preset-2 {
+    font-family: 'Plus Jakarta Sans';
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0;
+    line-height: var(--leading-12);
+    font-size: var(--s-10);
+}
+.text-preset-3 {
+    font-family: 'Plus Jakarta Sans';
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0;
+    line-height: var(--leading-12);
+    font-size: var(--s-8);
+}
+.text-preset-4 {
+    font-family: 'Plus Jakarta Sans';
+    font-weight: bold;
+    font-style: normal;
+    line-height: var(--leading-12);
+    font-size: var(--s-6);
+}
+.text-preset-5 {
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0;
+    line-height: var(--leading-15);
+    font-size: 1.8rem;
+}
+.text-preset-6 {
+    font-family: 'Plus Jakarta Sans';
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0;
+    line-height: var(--leading-15);
+    font-size: var(--s-4);
+}
+.text-preset-7 {
+    font-family: 'Plus Jakarta Sans';
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0;
+    line-height: var(--leading-15);
+    font-size: 1.8rem;
+}
+/* Utitlites >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BTNS  */
+.nav-btn-1 {
+    background-color: var(--color-Blue-900);
+    border-radius: 2.8rem;
+    width: 16.8rem;
+    height: 5.9rem;
+    color: var(--color-white);
+}
+.nav-btn-2 {
+    background: linear-gradient(to bottom,var(--Gradients-1-2),var(--Gradients-1-1));
+    border-radius: 2.8rem;
+    width: 16.8rem;
+    height: 5.9rem;
+    color: var(--color-white);
+}
+
+/* ================================================================================================ */
+
+/* Styles  */
+/* Styles >>>>>>>>Navigation */
+/* Styles >>>>>>>>>>>>>>>>>>>>>>>>>>Hero Headre  */
+.hero-img {
+    position: absolute;
+    right: -21.6rem;
+    top: -12rem;
+}
+.hero-img img {
+    display: block;
+}
+header:first-child  h1 {
+    color: var(--color-Blue-900);
+}
+header div p {
+    color: var(--color-gray);
+}
