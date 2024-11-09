@@ -250,9 +250,9 @@ header div p {
         width: 79.29px; 
         height:29px
     }
-    .hero {
+    /* .hero {
         display: none;
-    }
+    } */
 }
       /* 'sm': '640px' */
       @media (min-width: 640px) {
@@ -271,9 +271,16 @@ header div p {
         padding-right: var(--s-11);
         padding-left: var(--s-11);
     }
-    .hero {
-        display: none;
+    header {
+        padding-top: var(--s-16)rem;
+        padding-bottom: var(--s-16)rem;
+        padding-right: var(--s-11);
+        padding-left: var(--s-11);
     }
+        
+    /* .hero {
+        display: none;
+    } */
 }
           /* 'lg': '1024px' */
     @media (min-width: 1024px) {
