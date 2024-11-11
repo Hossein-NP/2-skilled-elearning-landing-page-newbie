@@ -202,6 +202,8 @@ nav div.flex-center {
 
 .hero-img img {
     display: block;
+    position: relative;
+    top: -3rem;
 }
 header:first-child  h1 {
     color: var(--color-Blue-900);
@@ -270,7 +272,7 @@ header div p {
             max-width: 76.8rem;
     }
     nav {
-        padding-top: var(--s-6) var(--s-11) var(--s-6) var(--s-11);
+        padding: var(--s-6) var(--s-11) var(--s-6) var(--s-11);
     }
     header {
         padding: var(--s-16) var(--s-11) var(--s-16) var(--s-11);
@@ -325,11 +327,12 @@ header div p {
         padding: 0;
      }
     nav {
-        padding-top: var(--s-6) var(--s-20) var(--s-6) var(--s-20);
+        padding: var(--s-6) var(--s-20) var(--s-6) var(--s-20);
     }
     header {
         padding-top: 6.4rem;
         padding-bottom: 6.4rem;
+        min-height: 66.8rem;
     }
         
 }
