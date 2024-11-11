@@ -199,11 +199,7 @@ nav div.flex-center {
     z-index: 2;
 }
 /* Styles >>>>>>>>>>>>>>>>>>>>>>>>>>Hero Headre  */
-.hero-img {
-    right: -21.6rem;
-    top: -12rem;
-    z-index: 1;
-}
+
 .hero-img img {
     display: block;
 }
@@ -265,6 +261,18 @@ header div p {
         padding-right: var(--s-5);
         padding-left: var(--s-5);
     }
+    .hero-img {
+        position: relative;
+        min-width: 33.5rem;
+        min-height: 32rem;
+        right: -39.5rem;
+        top: 56.5rem;
+    }
+    .text-preset-1 {
+        font-size: var(--s-10);
+        min-width: 32.6rem;
+        letter-spacing: -0.6px
+    }
     /* .hero {
         display: none;
     } */
@@ -292,7 +300,12 @@ header div p {
         padding-right: var(--s-11);
         padding-left: var(--s-11);
     }
-        
+    .hero-img {
+        position: absolute;
+        right: -21.6rem;
+        top: -12rem;
+        z-index: 1;
+    } 
     /* .hero {
         display: none;
     } */
