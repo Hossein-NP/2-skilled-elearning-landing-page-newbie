@@ -2,7 +2,7 @@
     /* Colors  */
     --color-Blue-900: #13183F;
     --color-Blue-600: hsl(234°, 25%, 52%);
-    --color-pink-600: hsl(341°, 92%, 62%);
+    --color-pink-600: #F74780;
     --color-pink-300: hsl(341°, 100%, 83%);
     --color-gray: #83869A;
     --color-white: #FFFFFF;
@@ -175,6 +175,9 @@ body {
     line-height: var(--leading-15);
     font-size: 1.8rem;
 }
+.getstarted-color {
+    color: var(--color-pink-600);
+}
 /* Utitlites >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BTNS  */
 .nav-btn-1 {
     background-color: var(--color-Blue-900);
@@ -190,7 +193,15 @@ body {
     height: 5.9rem;
     color: var(--color-white);
 }
-
+/* Utitlites >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Gradients  */
+.gradient-preset-1 {
+    background: linear-gradient(to bottom,var(--Gradients-1-2),var(--Gradients-1-1));
+    color: var(--color-white);
+}
+.gradient-preset-2 {
+    background: linear-gradient(to bottom,var(--Gradients-2-1),var(--Gradients-2-2));
+    color: var(--color-white);
+}
 /* ================================================================================================ */
 
 /* Styles  */
@@ -211,7 +222,18 @@ header:first-child  h1 {
 header div p {
     color: var(--color-gray);
 }
-
+.body-pages__topbox {
+     border-radius: 1.5rem;   
+}
+.body-page > div h2 {
+    color: var(--color-Blue-900);
+}
+.body-page > div p {
+    color: var(--color-gray);
+}
+.body-page > div a {
+    color: var(--color-pink-600);
+}
 
 
 /* container  */
@@ -255,6 +277,22 @@ header div p {
     }
     .hero-img {
         margin-top: 4.8rem;
+    }
+    .body-page {
+        padding: var(--s-16) var(--s-5) var(--s-20) var(--s-5);
+    }
+    .body-pages__topbox {
+        padding: var(--s-8);
+        margin-bottom: var(--s-8);
+    }
+    .body-pages__topbox h3 {
+        font-size: var(--s-6);
+    }
+    .body-page > div h2 {
+        font-size: var(--s-5);
+    }
+    .body-page > div p {
+        font-size: var(--s-4);
     }
     /* .hero {
         display: none;
