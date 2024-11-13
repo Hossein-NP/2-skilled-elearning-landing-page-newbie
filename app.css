@@ -5,6 +5,7 @@
     --color-pink-600: #F74780;
     --color-pink-300: hsl(341°, 100%, 83%);
     --color-gray: #83869A;
+    --color-gray-500: #83869a10;
     --color-white: #FFFFFF;
     /* Gradients  */
     --Gradients-1-1: #F02AA6;
@@ -52,7 +53,7 @@ body {
     font-weight: bold;
     font-style: normal;
     font-display: swap;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 /* ================================================================================================ */
@@ -178,6 +179,11 @@ body {
 .getstarted-color {
     color: var(--color-pink-600);
 }
+.svg-wrapper {
+    position: absolute;
+    top: -28px;
+    left: 32px;
+}
 /* Utitlites >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BTNS  */
 .nav-btn-1 {
     background-color: var(--color-Blue-900);
@@ -234,7 +240,9 @@ header div p {
 .body-page > div a {
     color: var(--color-pink-600);
 }
-
+.body-pages__bottom-boxes {
+    border-radius: 1.5rem;
+}
 
 /* container  */
 .container {
@@ -283,7 +291,6 @@ header div p {
     }
     .body-pages__topbox {
         padding: var(--s-8);
-        margin-bottom: var(--s-8);
     }
     .body-pages__topbox h3 {
         font-size: var(--s-6);
@@ -293,6 +300,14 @@ header div p {
     }
     .body-page > div p {
         font-size: var(--s-4);
+    }
+    .body-pages__bottom-boxes {
+        padding: var(--s-16) var(--s-8) var(--s-10) var(--s-8);
+        background-color: var(--color-gray-500);
+        margin-top: var(--s-8);
+    }
+    .body-pages__bottom-boxes p {
+        margin: var(--s-6) 0;
     }
     /* .hero {
         display: none;
