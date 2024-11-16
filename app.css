@@ -53,7 +53,7 @@ body {
     font-weight: bold;
     font-style: normal;
     font-display: swap;
-    /* overflow: hidden; */
+    overflow-x: hidden;
 }
 
 /* ================================================================================================ */
@@ -243,7 +243,10 @@ header div p {
 .body-pages__bottom-boxes {
     border-radius: 1.5rem;
 }
-
+.footer {
+    background-color: var(--color-Blue-900);
+    width: 100vw;
+}
 /* container  */
 .container {
     width: 100%;
@@ -304,7 +307,7 @@ header div p {
     .body-pages__bottom-boxes {
         padding: var(--s-16) var(--s-8) var(--s-10) var(--s-8);
         background-color: var(--color-gray-500);
-        margin-top: var(--s-8);
+        margin-top: 6rem;
     }
     .body-pages__bottom-boxes p {
         margin: var(--s-6) 0;
@@ -364,7 +367,7 @@ header div p {
       }
     .logo-svg-dimension {
         width: 111px; 
-        height:28px
+        height:28px;
     }
 }
           /* 'xl': '1280px' */
