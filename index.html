@@ -5,14 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <title>Frontend Mentor | Skilled e-learning landing page</title>
-  <link rel="shortcut icon" href="images/assets/favicon-32x32.png" type="image/x-icon">
-  <link rel="stylesheet" href="Fonts/Plus_Jakarta_Sans2/stylesheet.css">
-  <link rel="stylesheet" href="app.css">
-  <!-- <link rel="stylesheet" href="Grid.css"> -->
+  <link rel="shortcut icon" href="Assets/images/assets/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="Assets/Fonts/Plus_Jakarta_Sans2/stylesheet.css">
+  <link rel="stylesheet" href="style.css.css">
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .GradientPink {
+        background: linear-gradient(to bottom,#FF6F48,#F02AA6);
+      }
+      .GradientPurple {
+        background: linear-gradient(to bottom,#4851FF,#F02AA6);
+      }
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme : {
+        extend : {
+          colors : {
+            'Blue-900' : '#13183F',
+            'Blue-600' : '#666CA3',
+            'pink-600' : '#F74780',
+            'pink-300' : '#FFA7C3',
+            'grey' : '#83869A',
+          }
+        }
+      }
+    }
+  </script>
 </head>
 <body>
-  <!-- svgs  -->
-  <svg style="display: none;">
+  <!-- svges  -->
+  <svg class="hidden">
     <symbol id="logo"  xmlns="http://www.w3.org/2000/svg">
       <g fill="#13183F">
         <path d="M9.684 28.432c-2.16 0-4.038-.51-5.634-1.53S1.368 24.508.792 22.78l3.96-1.872c.504 1.056 1.188 1.884 2.052 2.484.864.6 1.824.9 2.88.9.768 0 1.356-.156 1.764-.468.408-.312.612-.744.612-1.296 0-.288-.072-.534-.216-.738-.144-.204-.36-.39-.648-.558a4.593 4.593 0 0 0-1.08-.432l-3.348-.936C5.16 19.408
@@ -49,128 +74,7 @@
   </svg>
  
 
-  <main>
-    <!-- Nav  -->
-     <div class="container">
-      <nav class="flex-between">
-        <!-- left Section -->
-        <div class="">
-          <!-- logo  -->
-          <a href="#" class="logo-lg">
-            <svg class="logo-svg-dimension">
-              <use href="#logo"></use>
-            </svg>
-          </a>
-          <div class="logo-small">
-            <img src="images/logo-small.png" alt="">
-          </div>
-        </div>
-         <!-- right Section -->
-        <div class="flex-center ">
-          <!-- nav link  -->
-          <a href="#" class="flex-center relative text-preset-7 nav-btn-1">Get Started</a>
-        </div>
-       </nav>
-     </div>
-
-     <!-- Hero Header -->
-     <div class="container hero">
-      <header class="flex-between">
-        <!-- Left Section  -->
-         <div class="hero-left">
-          <!-- hero title  -->
-           <h1 class="text-preset-1 blue-900">Maximize skill,
-            minimize budget</h1>
-           <!-- hero caption  -->
-           <p class="text-preset-5 mt-6 mt-10">Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</p>
-           <!-- hero btn  -->
-           <a href="#" class="flex-center text-preset-7 nav-btn-2">Get Started</a>
-         </div>
-        <!-- Right Section  -->
-         <div class="hero-img">
-          <picture>
-            <source srcset="images/assets/image-hero-desktop.png" type="image/png" media="(min-width: 1280px)">
-            <source srcset="images/assets/image-hero-desktop.webp" type="image/webp" media="(min-width: 1280px)">
-            <source srcset="images/assets/image-hero-desktop@2x.png" type="image/png" media="(min-width: 1280px)">
-            <source srcset="images/assets/image-hero-desktop@2x.webp" type="image/webp" media="(min-width: 1280px)">
-
-            <source srcset="images/assets/image-hero-tablet.png" type="image/png" media="(min-width: 768px)">
-            <source srcset="images/assets/image-hero-tablet.webp" type="image/webp" media="(min-width: 768px)">
-            <source srcset="images/assets/image-hero-desktop@2x.png" type="image/png" media="(min-width: 768px)">
-            <source srcset="images/assets/image-hero-tablet@2x.webp" type="image/webp" media="(min-width: 768px)">
-
-            <source srcset="images/assets/image-hero-mobile.png" type="image/png" media="(min-width: 375px)">
-            <source srcset="images/assets/image-hero-mobile.webp" type="image/webp" media="(min-width: 375px)">
-            <source srcset="images/assets/image-hero-mobile@2x.png" type="image/png" media="(min-width: 375px)">
-            <source srcset="images/assets/image-hero-mobile@2x.webp" type="image/webp" media="(min-width: 375px)">
-            <img src="images/assets/image-hero-desktop.webp" alt="">
-          </picture>
-         </div>
-      </header>
-     </div>
-
-     <!-- Body Page  -->
-      <div class="container">
-        <section class="body-page">
-          <div class="body-pages__topbox gradient-preset-1">
-            <h3 class="text-preset-3">Check out our most popular courses!</h3>
-          </div>
-          <div class="relative body-pages__bottom-boxes">
-            <!-- icon  -->
-              <svg width="56" height="56" class="svg-wrapper">
-                <use href="#icon-animation"></use>
-              </svg>
-            <!-- titles & cpation & link  -->
-            <h2 class="text-preset-4">Animation</h2>
-            <p class="text-preset-5">Learn the latest animation techniques to create stunning motion design and captivate your audience.</p>
-            <a href="" class="text-preset-7 getstarted-color">Get Started</a>
-          </div>
-          <div class="relative   body-pages__bottom-boxes">
-            <!-- icon  -->
-              <svg width="56" height="56" class="svg-wrapper">
-                <use href="#design"></use>
-              </svg>
-            <!-- titles & cpation & link  -->
-            <h2 class="text-preset-4">Design</h2>
-            <p class="text-preset-5">Create beautiful, usable interfaces to help shape the future of how the web looks.</p>
-            <a href="" class="text-preset-7 getstarted-color">Get Started</a>
-          </div>
-          <div class="relative  body-pages__bottom-boxes">
-            <!-- icon  -->
-              <svg width="56" height="56" class="svg-wrapper">
-                <use href="#photography"></use>
-              </svg>
-            <!-- titles & cpation & link  -->
-            <h2 class="text-preset-4">Photography</h2>
-            <p class="text-preset-5">Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.</p>
-            <a href="" class="text-preset-7 getstarted-color">Get Started</a>
-          </div>
-          <div class="relative body-pages__bottom-boxes">
-            <!-- icon  -->
-              <svg width="56" height="56" class="svg-wrapper">
-                <use href="#crypto"></use>
-              </svg>
-            <!-- titles & cpation & link  -->
-            <h2 class="text-preset-4">Crypto</h2>
-            <p class="text-preset-5">All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.</p>
-            <a href="" class="text-preset-7 getstarted-color">Get Started</a>
-          </div>
-          <div class="relative body-pages__bottom-boxes">
-            <!-- icon  -->
-              <svg width="56" height="56" class="svg-wrapper">
-                <use href="#business"></use>
-              </svg>
-            <!-- titles & cpation & link  -->
-            <h2 class="text-preset-4">Business</h2>
-            <p class="text-preset-5">A step-by-step playbook to help you start, scale, and sustain your business without outside investment.</p>
-            <a href="" class="text-preset-7 getstarted-color">Get Started</a>
-          </div>
-        </section>
-      </div>
-
-     <!-- Footer  -->
-     
-  </main>
+ 
 
 </body>
 </html>
