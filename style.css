@@ -47,3 +47,14 @@
   line-height: 27px;
   letter-spacing: normal;
 }
+
+@media all and (min-width:375px) {
+  .container {
+    width: 100%;
+  }
+}
+@media all and (min-width:1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
