@@ -70,18 +70,50 @@
   </svg>
  
   <!-- Header Nav Bar  -->
-  <header class="container xs:px-5 xs:py-4 md:px-11 md:py-6 xll:px-20">
-    <nav class="navbar flex items-center justify-between">
-      <!-- logo  -->
-       <div>
-        <svg class="xs:w-[112px] xs:h-[29px]">
-          <use xlink:href="#xs-logo"></use>
-        </svg>
-       </div>
-      <!-- nav link  -->
-      <a href="#" class="block bg-blue900 px-8 py-4 rounded-[28px] text-white text-preset-7">Get Started</a>
-    </nav>
+  <header>
+    <div class="container xs:px-5 xs:py-4 md:px-11 md:py-6 xll:px-20">
+      <nav class="navbar flex items-center justify-between">
+        <!-- logo  -->
+         <div>
+          <svg class="xs:w-[112px] xs:h-[29px]">
+            <use xlink:href="#xs-logo"></use>
+          </svg>
+         </div>
+        <!-- nav link  -->
+        <a href="#" class="block bg-blue900 px-8 py-4 rounded-[28px] text-white text-preset-7">Get Started</a>
+      </nav>
+    </div>
   </header>
+  <!-- Hero Header  -->
+  <section>
+    <div class="container xs:px-5 xs:py-16 text-preset-1-mobile text-left">
+      <!-- hero header left section  -->
+      <section class="hero-left">
+        <h1 class="text-blue900">Maximize skill,minimize budget</h1>
+        <p class="text-grey text-preset-5">Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</p>
+        <div class="flex items-center justify-center text-preset-7  GradientPink block xs:w-[169px] xs:h-[59px] xs:px-8 xs:py-4 rounded-[28px]">
+          <a href="" class=" text-white">Get Started</a>
+        </div>
+      </section>
+      <!-- hero header right section  -->
+      <section class="hero-right">
+        <!-- hero image  -->
+        <div>
+          <picture>
+            <!-- برای سایزهای بزرگ‌تر -->
+            <source srcset="./Assets/images/assets/image-hero-desktop.webp" media="(min-width: 1536px)">
+            <source srcset="./Assets/images/assets/image-hero-desktop.webp" media="(min-width: 1440px)">
+            <source srcset="./Assets/images/assets/image-hero-desktop.webp" media="(min-width: 1280px)">
+            <source srcset="./Assets/images/assets/image-hero-desktop.webp" media="(min-width: 1024px)">
+            <source srcset="./Assets/images/assets/image-hero-tablet.webp" media="(min-width: 768px)">
+            <source srcset="./Assets/images/assets/image-hero-mobile.webp" media="(min-width: 640px)">
+            <!-- برای کوچک‌ترین سایز -->
+            <img src="./Assets/images/assets/image-hero-mobile.webp" alt="توضیحات تصویر">
+          </picture>
+        </div>
+      </section>
+    </div>
+  </section>
 
  
 
