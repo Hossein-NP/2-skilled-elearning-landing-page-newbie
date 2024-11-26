@@ -55,13 +55,24 @@
   .container {
     width: 100%;
   }
+  .text-preset-1 {
+    font-size: 1.8125rem;
+    line-height: 3rem;
+  }
 }
 @media all and (min-width:768px) {
-  
+  .text-preset-1 {
+    width: 457px;
+    font-size: 3.5rem;
+    line-height: 5.25rem;
+  }
+  .hero-left p {
+    width: 448px;
+  }
   .hero-right__img{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -55px;
+    right: -292.71px;
   }
 }
 @media all and (min-width:1440px) {
