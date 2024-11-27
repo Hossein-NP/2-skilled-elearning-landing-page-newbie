@@ -80,8 +80,18 @@
     right: -292.71px;
   }
 }
+@media all and (min-width:1024px) {
+  .hero-right__img{
+    top: -165px;
+    right: -437.71px;
+  }
+}
 @media all and (min-width:1440px) {
   .container {
     max-width: 1440px;
+  }
+  .hero-right__img{
+    top: -170px;
+    right: -386.71px;
   }
 }
