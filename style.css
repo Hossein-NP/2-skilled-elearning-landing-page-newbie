@@ -59,15 +59,20 @@
     font-size: 1.8125rem;
     line-height: 3rem;
   }
+  .hero-right__img{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  }
 }
 @media all and (min-width:768px) {
   .text-preset-1 {
-    width: 457px;
-    font-size: 3.5rem;
-    line-height: 5.25rem;
+    max-width: 352px;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
   .hero-left p {
-    width: 448px;
+    width: 352px;
   }
   .hero-right__img{
     position: absolute;
