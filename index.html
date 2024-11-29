@@ -16,6 +16,18 @@
       .GradientPurple {
         background: linear-gradient(to bottom,#4851FF,#F02AA6);
       }
+      .nav-xsBtn , .hero-xsBtn  {
+        background-color: rgba(19, 24, 63, 1);
+        padding: 16px 32px;
+        width: 169px;
+        height: 59px;
+        border-radius: 28px;
+        font-size: 18px;
+        font-family: 'Plus Jakarta Sans';
+        font-weight: 500;
+        color: white;
+        line-height: 25.5px;
+      }
     }
   </style>
   <script src="https://cdn.tailwindcss.com"></script>
@@ -24,7 +36,7 @@
       theme : {
         extend : {
           colors : {
-            'blue900' : '#13183F',
+            'blue900' : 'rgba(19, 24, 63, 1)',
             'blue600' : '#666CA3',
             'pink600' : '#F74780',
             'pink300' : '#FFA7C3',
@@ -62,76 +74,66 @@
         <path d="M59.4541 28.0631V0.5H64.8459V28.0631H59.4541Z" fill="#13183F"/>
         <path d="M78.2538 28.5001C76.1689 28.5001 74.3597 28.0328 72.826 27.0983C71.2923 26.1637 70.1061 24.9075 69.2674 23.3297C68.4286 21.7519 68.0093 20.0042 68.0093 18.0866C68.0093 16.0961 68.4466 14.3241 69.3213 12.7706C70.196 11.217 71.3762 9.99119 72.8619 9.09305C74.3477 8.19492 76.0251 7.74585 77.8943 7.74585C79.452 7.74585 80.8299 7.99466 82.0281 8.49227C83.2262 8.98989 84.2387 9.68777 85.0655 10.5859C85.8922 11.484 86.5213 12.5217 86.9526 13.699C87.384 14.8763 87.5996 16.1568 87.5996 17.5404C87.5996 17.9288 87.5817 18.3111 87.5457 18.6873C87.5098 19.0636 87.4439 19.3852 87.348 19.6522H72.6463V15.647H84.2926L81.7405 17.5404C81.9801 16.4966 81.9682 15.5681 81.7045 14.755C81.4409 13.9418 80.9796 13.2985 80.3206 12.8252C79.6616 12.3518 78.8529 12.1152 77.8943 12.1152C76.9597 12.1152 76.1569 12.3458 75.486 12.807C74.815 13.2682 74.3117 13.9478 73.9762 14.846C73.6408 15.7441 73.509 16.8364 73.5808 18.123C73.485 19.2396 73.6168 20.2227 73.9762 21.0722C74.3357 21.9218 74.8869 22.5833 75.6297 23.0566C76.3726 23.53 77.2713 23.7667 78.3257 23.7667C79.2842 23.7667 80.105 23.5725 80.7879 23.1841C81.4709 22.7957 82.0041 22.2617 82.3875 21.582L86.701 23.6574C86.3176 24.6284 85.7125 25.478 84.8857 26.2062C84.059 26.9344 83.0825 27.4988 81.9562 27.8993C80.8299 28.2998 79.5957 28.5001 78.2538 28.5001Z" fill="#13183F"/>
         <path fill-rule="evenodd" clip-rule="evenodd" d="M94.8603 27.1164C96.37 28.0388 98.0834 28.5 100.001 28.5C101.342 28.5 102.589 28.2512 103.739 27.7536C104.623 27.3709 105.366 26.8482 105.967 26.1856V28.0631H111V0.5H105.608V9.85192C105.094 9.33528 104.489 8.90631 103.793 8.56502C102.678 8.01886 101.402 7.74577 99.9646 7.74577C98.0954 7.74577 96.4059 8.20698 94.8962 9.12939C93.3865 10.0518 92.1883 11.2958 91.3017 12.8615C90.415 14.4272 89.9717 16.181 89.9717 18.1229C89.9717 20.0405 90.409 21.7883 91.2837 23.3661C92.1584 24.9439 93.3506 26.194 94.8603 27.1164ZM103.236 22.8926C102.493 23.3538 101.63 23.5844 100.648 23.5844C99.6651 23.5844 98.7845 23.3538 98.0057 22.8926C97.2268 22.4314 96.6218 21.7881 96.1904 20.9628C95.7591 20.1375 95.5434 19.1908 95.5434 18.1228C95.5434 17.0547 95.7591 16.1141 96.1904 15.3009C96.6218 14.4877 97.2268 13.8445 98.0057 13.3711C98.7845 12.8978 99.6651 12.6611 100.648 12.6611C101.63 12.6611 102.493 12.8917 103.236 13.3529C103.979 13.8141 104.56 14.4574 104.979 15.2827C105.398 16.108 105.608 17.0547 105.608 18.1228C105.608 19.1908 105.398 20.1375 104.979 20.9628C104.56 21.7881 103.979 22.4314 103.236 22.8926Z" fill="#13183F"/>
-        </symbol>
-         
-    <symbol id="logo-light"  xmlns="http://www.w3.org/2000/svg"><g fill="#FFF"><path d="M9.684 28.432c-2.16 0-4.038-.51-5.634-1.53S1.368 24.508.792 22.78l3.96-1.872c.504 1.056 1.188 1.884 2.052 2.484.864.6 1.824.9 2.88.9.768 0 1.356-.156 1.764-.468.408-.312.612-.744.612-1.296 0-.288-.072-.534-.216-.738-.144-.204-.36-.39-.648-.558a4.593 4.593 0 0 0-1.08-.432l-3.348-.936C5.16 19.408 3.924 18.67 3.06 17.65c-.864-1.02-1.296-2.226-1.296-3.618 0-1.224.312-2.292.936-3.204.624-.912 1.5-1.626 2.628-2.142 1.128-.516 2.424-.774 3.888-.774 1.92 0 3.606.45 5.058 1.35 1.452.9 2.478 2.166 3.078 3.798l-3.996 1.872c-.288-.816-.81-1.47-1.566-1.962s-1.614-.738-2.574-.738c-.696 0-1.242.144-1.638.432-.396.288-.594.684-.594 1.188 0 .264.072.504.216.72.144.216.378.408.702.576.324.168.726.324 1.206.468l3.132.936c1.632.48 2.88 1.206 3.744 2.178.864.972 1.296 2.166 1.296 3.582 0 1.224-.318 2.292-.954 3.204-.636.912-1.518 1.626-2.646 2.142s-2.46.774-3.996.774ZM20.52 28V.748h5.4v17.46l-2.016-.648 8.676-9.216h6.66l-7.128 7.92L39.204 28h-6.12l-5.94-9.972 3.132-.792-6.012 6.552 1.656-3.132V28zM41.616 28V8.344h5.4V28h-5.4Zm0-21.42v-5.4h5.4v5.4h-5.4ZM50.976 28V.748h5.4V28zM60.336 28V.748h5.4V28zM79.164 28.432c-2.088 0-3.9-.462-5.436-1.386a9.578 9.578 0 0 1-3.564-3.726c-.84-1.56-1.26-3.288-1.26-5.184 0-1.968.438-3.72 1.314-5.256a9.821 9.821 0 0 1 3.546-3.636c1.488-.888 3.168-1.332 5.04-1.332 1.56 0 2.94.246 4.14.738 1.2.492 2.214 1.182 3.042 2.07a9.115 9.115 0 0 1 1.89 3.078c.432 1.164.648 2.43.648 3.798 0 .384-.018.762-.054 1.134-.036.372-.102.69-.198.954H73.548v-3.96h11.664l-2.556 1.872c.24-1.032.228-1.95-.036-2.754s-.726-1.44-1.386-1.908c-.66-.468-1.47-.702-2.43-.702-.936 0-1.74.228-2.412.684-.672.456-1.176 1.128-1.512 2.016-.336.888-.468 1.968-.396 3.24-.096 1.104.036 2.076.396 2.916.36.84.912 1.494 1.656 1.962.744.468 1.644.702 2.7.702.96 0 1.782-.192 2.466-.576a4.147 4.147 0 0 0 1.602-1.584l4.32 2.052c-.384.96-.99 1.8-1.818 2.52-.828.72-1.806 1.278-2.934 1.674-1.128.396-2.364.594-3.708.594Zm21.78 0c-1.92 0-3.636-.456-5.148-1.368a9.932 9.932 0 0 1-3.582-3.708c-.876-1.56-1.314-3.288-1.314-5.184 0-1.92.444-3.654 1.332-5.202a10.112 10.112 0 0 1 3.6-3.69c1.512-.912 3.204-1.368 5.076-1.368 1.44 0 2.718.27 3.834.81s1.998 1.302 2.646 2.286l-.828 1.08V.748h5.4V28h-5.04v-3.6l.504 1.116c-.672.96-1.584 1.686-2.736 2.178-1.152.492-2.4.738-3.744.738Zm.648-4.86c.984 0 1.848-.228 2.592-.684a4.715 4.715 0 0 0 1.746-1.908c.42-.816.63-1.752.63-2.808 0-1.056-.21-1.992-.63-2.808a4.715 4.715 0 0 0-1.746-1.908c-.744-.456-1.608-.684-2.592-.684s-1.866.234-2.646.702a4.877 4.877 0 0 0-1.818 1.908c-.432.804-.648 1.734-.648 2.79s.216 1.992.648 2.808a4.721 4.721 0 0 0 1.818 1.908c.78.456 1.662.684 2.646.684Z"/></g></symbol>
-    <symbol id="icon-animation" width="56" height="56" xmlns="http://www.w3.org/2000/svg">
+      </symbol>  
+      <symbol id="logo-light"  xmlns="http://www.w3.org/2000/svg"><g fill="#FFF"><path d="M9.684 28.432c-2.16 0-4.038-.51-5.634-1.53S1.368 24.508.792 22.78l3.96-1.872c.504 1.056 1.188 1.884 2.052 2.484.864.6 1.824.9 2.88.9.768 0 1.356-.156 1.764-.468.408-.312.612-.744.612-1.296 0-.288-.072-.534-.216-.738-.144-.204-.36-.39-.648-.558a4.593 4.593 0 0 0-1.08-.432l-3.348-.936C5.16 19.408 3.924 18.67 3.06 17.65c-.864-1.02-1.296-2.226-1.296-3.618 0-1.224.312-2.292.936-3.204.624-.912 1.5-1.626 2.628-2.142 1.128-.516 2.424-.774 3.888-.774 1.92 0 3.606.45 5.058 1.35 1.452.9 2.478 2.166 3.078 3.798l-3.996 1.872c-.288-.816-.81-1.47-1.566-1.962s-1.614-.738-2.574-.738c-.696 0-1.242.144-1.638.432-.396.288-.594.684-.594 1.188 0 .264.072.504.216.72.144.216.378.408.702.576.324.168.726.324 1.206.468l3.132.936c1.632.48 2.88 1.206 3.744 2.178.864.972 1.296 2.166 1.296 3.582 0 1.224-.318 2.292-.954 3.204-.636.912-1.518 1.626-2.646 2.142s-2.46.774-3.996.774ZM20.52 28V.748h5.4v17.46l-2.016-.648 8.676-9.216h6.66l-7.128 7.92L39.204 28h-6.12l-5.94-9.972 3.132-.792-6.012 6.552 1.656-3.132V28zM41.616 28V8.344h5.4V28h-5.4Zm0-21.42v-5.4h5.4v5.4h-5.4ZM50.976 28V.748h5.4V28zM60.336 28V.748h5.4V28zM79.164 28.432c-2.088 0-3.9-.462-5.436-1.386a9.578 9.578 0 0 1-3.564-3.726c-.84-1.56-1.26-3.288-1.26-5.184 0-1.968.438-3.72 1.314-5.256a9.821 9.821 0 0 1 3.546-3.636c1.488-.888 3.168-1.332 5.04-1.332 1.56 0 2.94.246 4.14.738 1.2.492 2.214 1.182 3.042 2.07a9.115 9.115 0 0 1 1.89 3.078c.432 1.164.648 2.43.648 3.798 0 .384-.018.762-.054 1.134-.036.372-.102.69-.198.954H73.548v-3.96h11.664l-2.556 1.872c.24-1.032.228-1.95-.036-2.754s-.726-1.44-1.386-1.908c-.66-.468-1.47-.702-2.43-.702-.936 0-1.74.228-2.412.684-.672.456-1.176 1.128-1.512 2.016-.336.888-.468 1.968-.396 3.24-.096 1.104.036 2.076.396 2.916.36.84.912 1.494 1.656 1.962.744.468 1.644.702 2.7.702.96 0 1.782-.192 2.466-.576a4.147 4.147 0 0 0 1.602-1.584l4.32 2.052c-.384.96-.99 1.8-1.818 2.52-.828.72-1.806 1.278-2.934 1.674-1.128.396-2.364.594-3.708.594Zm21.78 0c-1.92 0-3.636-.456-5.148-1.368a9.932 9.932 0 0 1-3.582-3.708c-.876-1.56-1.314-3.288-1.314-5.184 0-1.92.444-3.654 1.332-5.202a10.112 10.112 0 0 1 3.6-3.69c1.512-.912 3.204-1.368 5.076-1.368 1.44 0 2.718.27 3.834.81s1.998 1.302 2.646 2.286l-.828 1.08V.748h5.4V28h-5.04v-3.6l.504 1.116c-.672.96-1.584 1.686-2.736 2.178-1.152.492-2.4.738-3.744.738Zm.648-4.86c.984 0 1.848-.228 2.592-.684a4.715 4.715 0 0 0 1.746-1.908c.42-.816.63-1.752.63-2.808 0-1.056-.21-1.992-.63-2.808a4.715 4.715 0 0 0-1.746-1.908c-.744-.456-1.608-.684-2.592-.684s-1.866.234-2.646.702a4.877 4.877 0 0 0-1.818 1.908c-.432.804-.648 1.734-.648 2.79s.216 1.992.648 2.808a4.721 4.721 0 0 0 1.818 1.908c.78.456 1.662.684 2.646.684Z"/></g></symbol>
+      <symbol id="icon-animation" width="56" height="56" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a"><stop stop-color="#FF6F48" offset="0%"/><stop stop-color="#F02AA6" offset="100%"/></linearGradient>
       </defs>
       <g fill="none" fill-rule="evenodd"><circle fill="url(#a)" cx="28" cy="28" r="28"/><path d="M33.97 20.678c.565-.498.893-1.21.906-1.962A2.706 2.706 0 0 0 32.16 16a2.794 2.794 0 0 0-1.66.603 2.825 2.825 0 0 0-.854 1.962 2.69 2.69 0 0 0 4.325 2.113Zm-8.752.453c0 .05-.05.05-.1.1v.05a6.308 6.308 0 0 0-2.919 1.41c-.503.473-.958.995-1.358 1.559-1.006 1.408 1.358 2.766 2.315 1.358 1.257-1.762 2.816-2.264 4.527-1.71a141.96 141.96 0 0 0-2.717 5.181c-1.107 2.163-3.47 3.874-5.786 2.566a1.402 1.402 0 1 0-1.508 2.364 6.826 6.826 0 0 0 8.704-1.66c.05 0 .153.05.2.05 1.5.624 2.907 1.454 4.177 2.466.603.502 1.66 3.065 2.263 4.376a1.392 1.392 0 0 0 2.113.452c.393-.382.476-.982.202-1.456-.705-1.456-1.862-4.427-2.818-5.135a31.566 31.566 0 0 0-2.364-1.762l.1-.1a16.972 16.972 0 0 0-1.006-.605c.856-1.609 1.711-3.168 2.616-4.728 2.11.667 4.415.19 6.087-1.258.517-.46.973-.984 1.358-1.56.956-1.257-.905-2.515-2.012-1.66a.709.709 0 0 0-.153.202 4.36 4.36 0 0 1-2.013 1.66c-.05.05-.1.05-.1.1h-.051a4.146 4.146 0 0 1-3.622-.452l.101-.101h.05a.383.383 0 0 0-.201-.1 9.292 9.292 0 0 0-.956-.554 7.258 7.258 0 0 0-5.134-1.056l.005.003Z" fill="#FFF" fill-rule="nonzero"/>
       </g>
-    </symbol>
-    <symbol id="design" width="56" height="56" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a"><stop stop-color="#FF6F48" offset="0%"/><stop stop-color="#F02AA6" offset="100%"/></linearGradient><path d="M16 0H2C.9 0 0 .9 0 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2Zm0 16L9 8v8H2l7-8V2h7v14Z" id="b"/></defs><g fill="none" fill-rule="evenodd"><circle fill="url(#a)" cx="28" cy="28" r="28"/><use fill="#FFF" xlink:href="#b" transform="translate(19 19)"/></g></symbol>
-    <symbol id="photography" width="56" height="56" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a"><stop stop-color="#FF6F48" offset="0%"/><stop stop-color="#F02AA6" offset="100%"/></linearGradient><path d="m31 18 1.83 2H36c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H20c-1.1 0-2-.9-2-2V22c0-1.1.9-2 2-2h3.17L25 18h6Zm-3 5c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5Zm0 1.8a3.2 3.2 0 1 1 0 6.4 3.2 3.2 0 0 1 0-6.4Z" id="b"/></defs><g fill="none" fill-rule="evenodd"><circle fill="url(#a)" cx="28" cy="28" r="28"/><use fill="#FFF" xlink:href="#b"/></g></symbol>
-    <symbol id="crypto" width="56" height="56" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a"><stop stop-color="#FF6F48" offset="0%"/><stop stop-color="#F02AA6" offset="100%"/></linearGradient><path d="M26 28c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2Zm-4-4c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2Zm0 8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2Zm12-8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2Zm-4 8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2Zm4-4c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2Zm-4-4c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2Zm-4-4c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2Z" id="b"/></defs><g fill="none" fill-rule="evenodd"><circle fill="url(#a)" cx="28" cy="28" r="28"/><use fill="#FFF" xlink:href="#b"/></g></symbol>
-    <symbol id="business" width="56" height="56" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a"><stop stop-color="#FF6F48" offset="0%"/><stop stop-color="#F02AA6" offset="100%"/></linearGradient><path d="M35 22h-2c0-2.76-2.24-5-5-5s-5 2.24-5 5h-2c-1.1 0-1.99.9-1.99 2L19 36c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V24c0-1.1-.9-2-2-2Zm-7-3c1.66 0 3 1.34 3 3h-6c0-1.66 1.34-3 3-3Zm0 10c-2.76 0-5-2.24-5-5h2c0 1.66 1.34 3 3 3s3-1.34 3-3h2c0 2.76-2.24 5-5 5Z" id="b"/></defs><g fill="none" fill-rule="evenodd"><circle fill="url(#a)" cx="28" cy="28" r="28"/><use fill="#FFF" xlink:href="#b"/></g></symbol>
+      </symbol>
+      <symbol id="design" width="56" height="56" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a"><stop stop-color="#FF6F48" offset="0%"/><stop stop-color="#F02AA6" offset="100%"/></linearGradient><path d="M16 0H2C.9 0 0 .9 0 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2Zm0 16L9 8v8H2l7-8V2h7v14Z" id="b"/></defs><g fill="none" fill-rule="evenodd"><circle fill="url(#a)" cx="28" cy="28" r="28"/><use fill="#FFF" xlink:href="#b" transform="translate(19 19)"/></g></symbol>
+      <symbol id="photography" width="56" height="56" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a"><stop stop-color="#FF6F48" offset="0%"/><stop stop-color="#F02AA6" offset="100%"/></linearGradient><path d="m31 18 1.83 2H36c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H20c-1.1 0-2-.9-2-2V22c0-1.1.9-2 2-2h3.17L25 18h6Zm-3 5c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5Zm0 1.8a3.2 3.2 0 1 1 0 6.4 3.2 3.2 0 0 1 0-6.4Z" id="b"/></defs><g fill="none" fill-rule="evenodd"><circle fill="url(#a)" cx="28" cy="28" r="28"/><use fill="#FFF" xlink:href="#b"/></g></symbol>
+      <symbol id="crypto" width="56" height="56" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a"><stop stop-color="#FF6F48" offset="0%"/><stop stop-color="#F02AA6" offset="100%"/></linearGradient><path d="M26 28c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2Zm-4-4c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2Zm0 8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2Zm12-8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2Zm-4 8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2Zm4-4c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2Zm-4-4c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2Zm-4-4c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2Z" id="b"/></defs><g fill="none" fill-rule="evenodd"><circle fill="url(#a)" cx="28" cy="28" r="28"/><use fill="#FFF" xlink:href="#b"/></g></symbol>
+      <symbol id="business" width="56" height="56" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a"><stop stop-color="#FF6F48" offset="0%"/><stop stop-color="#F02AA6" offset="100%"/></linearGradient><path d="M35 22h-2c0-2.76-2.24-5-5-5s-5 2.24-5 5h-2c-1.1 0-1.99.9-1.99 2L19 36c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V24c0-1.1-.9-2-2-2Zm-7-3c1.66 0 3 1.34 3 3h-6c0-1.66 1.34-3 3-3Zm0 10c-2.76 0-5-2.24-5-5h2c0 1.66 1.34 3 3 3s3-1.34 3-3h2c0 2.76-2.24 5-5 5Z" id="b"/></defs><g fill="none" fill-rule="evenodd"><circle fill="url(#a)" cx="28" cy="28" r="28"/><use fill="#FFF" xlink:href="#b"/></g></symbol>
   </svg>
  
   <!-- Header Nav Bar  -->
-  <header>
-    <div class="container xs:px-5 xs:py-4 md:px-11 md:py-6 xll:px-20">
-      <nav class="navbar flex items-center justify-between">
-        <!-- logo  -->
-         <div>
-          <a href="#">
-            <svg class="xs:w-[112px] xs:h-[29px] lg:hidden">
-              <use xlink:href="#xs-logo"></use>
-            </svg>
-          </a>
-          <a href="#">
-            <svg class="w-[111px] h-[28px] xs:hidden lg:block">
-              <use xlink:href="#xs-logo"></use>
-            </svg>
-          </a>
-         </div>
-        <!-- nav link  -->
-        <a href="#" class="block bg-blue900 px-8 py-4 rounded-[28px] text-white text-preset-7">Get Started</a>
-      </nav>
-    </div>
+  <header class="xs:px-5 xs:py-4 md:px-11 md:py-6 xll:px-20 xll:py-6 bg-slate-700 relative z-10">
+    <nav class="container bg-slate-600">
+      <div class="flex items-center justify-between">
+        <!-- Logo  -->
+        <a href="#">
+          <svg width="80px" height="21px" class="xll:hidden">
+            <use xlink:href="#xs-logo"></use>
+          </svg>
+          <svg width="111px" height="29px" class="xs:hidden xll:block">
+            <use xlink:href="#lg-logo"></use>
+          </svg>
+        </a>
+        <!-- Nav Link  -->
+        <a href="" class="nav-xsBtn md:px-6 md:py-3 md:w-[152px] md:h-[48px] md:leading-[24px] xll:px-8 xll:py-4 xll:w-[169px] xll:h-[59px] xll:leading-[27px]">Get Started</a>
+      </div>
+    </nav>
   </header>
-  <!-- Hero Header  -->
-  <section>
-    <div class="container xs:px-5 xs:py-16 md:px-11 xll:px-20 text-preset-1-mobile text-left">
-      <!-- hero header left section  -->
-      <section class=" flex flex-col justify-center md:h-[470px] hero-left relative z-10">
-        <h1 class="text-blue900 text-preset-1  xll:text-[3.5rem] xll:leading-[4.2rem] xll:w-[400px]">Maximize skill,minimize budget</h1> <!--[@media(min-width:375px)]:text-[29px]  special method for font size in tailwind--> 
-        <p class="text-grey text-preset-5 text-left mt-6 mb-10">Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</p>
-        <div class="flex items-center justify-center text-preset-7 GradientPink block xs:w-[169px] xs:h-[59px] xs:px-8 xs:py-4 rounded-[28px] xs:mb-12">
-          <a href="" class=" text-white">Get Started</a>
-        </div>
-      </section>
-      <!-- hero header right section  -->
-      <section class="hero-right">
-        <!-- hero image  -->
-        <div class="hero-right__img z-20">
-          <picture>
-            <!-- برای سایزهای بزرگ‌تر -->
-            <source srcset="./Assets/images/assets/image-hero-desktop.webp" media="(min-width: 1536px)">
-            <source srcset="./Assets/images/assets/image-hero-desktop.webp" media="(min-width: 1440px)">
-            <source srcset="./Assets/images/assets/image-hero-desktop.webp" media="(min-width: 1280px)">
-            <source srcset="./Assets/images/assets/image-hero-desktop.webp" media="(min-width: 1024px)">
-            <source srcset="./Assets/images/assets/image-hero-tablet.webp" media="(min-width: 768px)">
-            <source srcset="./Assets/images/assets/image-hero-mobile.webp" media="(min-width: 640px)">
-            <!-- برای کوچک‌ترین سایز -->
-            <img src="./Assets/images/assets/image-hero-mobile.webp" alt="توضیحات تصویر">
-          </picture>
-        </div>
-      </section>
-    </div>
-  </section>
 
- 
+  <!-- Hero Header  -->
+  <div class="xs:px-5 xs:py-4 md:px-11 md:py-16 xll:px-20 xll:py-16 bg-slate-900 overflow-hidden">
+    <div class="container bg-zinc-800">
+    <!-- content  -->
+    <div class="flex flex-col">
+      <h1 class="text-preset-1-mobile text-blue900">Maximize skill, minimize budget</h1>
+      <span class="text-preset-5 text-grey mb-10 mt-6">Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</span>
+      <a href="" class="GradientPink hero-xsBtn xs:mb-12 md:mb-0">Get Started</a>
+    </div>
+    <!-- image section  -->
+    <div class="md:absolute z-20 md:top-[-73px] md:right-[-297px]">
+      <picture class="flex items-center justify-center">
+          <!-- برای سایزهای بزرگ‌تر -->
+        <source srcset="./Assets/images/assets/image-hero-desktop.webp" media="(min-width: 1536px)">
+        <source srcset="./Assets/images/assets/image-hero-desktop.webp" media="(min-width: 1440px)">
+        <source srcset="./Assets/images/assets/image-hero-desktop.webp" media="(min-width: 1280px)">
+        <source srcset="./Assets/images/assets/image-hero-desktop.webp" media="(min-width: 1024px)">
+        <source srcset="./Assets/images/assets/image-hero-tablet.webp" media="(min-width: 768px)">
+        <source srcset="./Assets/images/assets/image-hero-mobile.webp" media="(min-width: 640px)">
+        <!-- برای کوچک‌ترین سایز -->
+        <img src="./Assets/images/assets/image-hero-mobile.webp" alt="توضیحات تصویر">
+      </picture>
+    </div>
+  </div>
+
+  
 
 </body>
 </html>
