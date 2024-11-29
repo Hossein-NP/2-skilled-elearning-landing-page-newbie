@@ -16,19 +16,26 @@
   line-height: 3rem;
   letter-spacing: normal;
 }
-.text-preset-3 {
+.text-preset-3 , .text-preset-3-tablet {
   font-family: 'Plus Jakarta Sans';
   font-weight: bold;
   font-size: 2rem;
   line-height: 2.4rem;
   letter-spacing: normal;
 }
-.text-preset-4 {
+.text-preset-3-tablet {
+  font-size: 1.5rem;
+} 
+.text-preset-4 , .text-preset-4-mobile {
   font-family: 'Plus Jakarta Sans';
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 1.8rem;
   letter-spacing: normal;
+}
+.text-preset-4-mobile {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
 }
 .text-preset-5 {
   font-family: 'Plus Jakarta Sans';
@@ -49,6 +56,13 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 1.6875rem;
+  letter-spacing: 0;
+}
+.text-preset-8 {
+  font-family: 'Plus Jakarta Sans';
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5rem;
   letter-spacing: 0;
 }
 
